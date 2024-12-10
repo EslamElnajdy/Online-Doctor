@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./index.html",           // Include index.html
-    "./src/**/*.{js,jsx,ts,tsx}", // Include React components
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns:{
+        'auto':'repeat(auto-fill, minmax(200px, 1fr))'
+      },
+      colors:{
+        'primary':'#117864'
+      }
+    },
   },
   plugins: [],
-};
+}
