@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
-import SpecialityMenu from '../components/SpecialityMenu'
+import SpecialityMenu from '../components/SpecMenu'
 import { doctors } from '../assets/assets'
 
 const TopDoctors = () => {
