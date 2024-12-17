@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Footer from './components/Footer'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Doctors from './pages/Doctors'
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/doctors' element={<Doctors />} />
+        <Route path='/doctors/:speciality' element={<Doctors />} />
       </Routes>
       <Footer />
     </div>
